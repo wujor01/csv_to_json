@@ -5,7 +5,11 @@ var rows = [];
 var writeStr = "";
 
 Run = async () => {
-    let inputFilename = "report_datafresh_srh.xlsx";
+    let inputFilename = process.argv.slice(2)[0];
+    if (!inputFilename) {
+        console.log("Please type your's filepath want to convert to JSON!\nExample: 'npm start example.csv' OR 'npm start example.xlsx'");
+        return;
+    }
     
     let outputFilename = inputFilename.split('.')[0] + '.json';
     if (inputFilename.includes(".xls")){
