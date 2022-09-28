@@ -1,0 +1,4 @@
+- Cài đặt môi trường node: 
+  - `npm install`
+- Chạy convert file Excel, CSV sang JSON:
+  - `npm start example.csv` OR `npm start example.xlsx`
