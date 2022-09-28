@@ -2,3 +2,5 @@
   - `npm install`
 - Chạy convert file Excel, CSV sang JSON:
   - `npm start "D:\report_datafresh_srh.csv"` OR `npm start "D:\report_datafresh_srh.xlsx"`
+- Chạy convert file CSV sang file excel:
+  - `npm start "D:\report_datafresh_srh.csv" csvtoxlsx`
